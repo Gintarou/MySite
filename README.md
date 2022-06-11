@@ -1,3 +1,6 @@
-# Show my schedule on iPad
+# Rikuto's Portfolio site
 
-これはiPad上でGoogle Calendarのスケジュールを表示させるアプリケーションです。
+- React
+- TypeScript
+- emotion
+- craco
