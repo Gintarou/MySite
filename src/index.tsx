@@ -7,13 +7,17 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from '@/reportWebVitals';
 import { Routes } from '@/utils/Routes';
 
+import { ScrollObserver } from './utils/scrollObserver';
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
 root.render(
   <React.StrictMode>
-    <Global styles={css([emotionReset])} />
-    <Routes />
+    <ScrollObserver>
+      <Global styles={css([emotionReset])} />
+      <Routes />
+    </ScrollObserver>
   </React.StrictMode>,
 );
 
