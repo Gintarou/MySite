@@ -22,13 +22,12 @@ export const About = () => (
 
 const wrapper = css({
   background: theme.colors.white,
-  height: '200vh',
+  padding: '100px 0',
 });
 
 const textBlock = css({
   margin: '0 auto ',
   maxWidth: '900px',
-  paddingTop: '100px',
   width: '80%',
   p: {
     fontSize: '34px',

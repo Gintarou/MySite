@@ -32,7 +32,7 @@ export const Top = () => {
       />
       <div css={headingWrapper(progress)}>
         <h1 css={heading1}>Hello.</h1>
-        <h2 css={heading2}>I&lsquo;m e-creator :)</h2>
+        <h2 css={heading2}>I&lsquo;m Kansai-jin :)</h2>
       </div>
     </section>
   );
