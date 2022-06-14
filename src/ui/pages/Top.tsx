@@ -6,7 +6,7 @@ import { css } from '@emotion/react';
 // @ts-ignore
 import BackgroundVideo from '@/assets/topBg.mp4';
 import { ScrollContext } from '@/utils/scrollObserver';
-import { theme } from '@/utils/thene';
+import { theme } from '@/utils/theme';
 
 export const Top = () => {
   const refContainer = useRef<HTMLElement>(null);
@@ -32,7 +32,7 @@ export const Top = () => {
       />
       <div css={headingWrapper(progress)}>
         <h1 css={heading1}>Hello.</h1>
-        <h2 css={heading2}>I am Kansaijin :)</h2>
+        <h2 css={heading2}>I&lsquo;m e-creator :)</h2>
       </div>
     </section>
   );

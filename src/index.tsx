@@ -10,24 +10,17 @@ import { Routes } from '@/utils/Routes';
 import { ScrollObserver } from './utils/scrollObserver';
 
 const font = css`
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap');
-  @import url('https://fonts.gstatic.com');
-
   h1,
   h2,
   h3,
   h4,
   h5,
-  h6 {
-    font-family: 'Montserrat';
-    font-weight: 900;
-  }
-
+  h6,
   p,
   a,
   span,
   div {
-    font-family: 'Roboto';
+    font-family: 'Poppins';
   }
 `;
 
