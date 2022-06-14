@@ -43,6 +43,7 @@ const wrapper = css({
   display: 'flex',
   justifyContent: 'center',
   height: '100vh',
+  overflow: 'hidden',
   position: 'sticky',
   top: '0',
   // TODO : zIndex以外で考える
