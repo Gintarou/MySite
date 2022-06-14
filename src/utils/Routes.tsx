@@ -9,12 +9,14 @@ import { Skills } from '@/pages/Skills';
 import { About } from '@/pages/About';
 
 export const Routes: React.FC = () => (
-  <BrowserRouter>
-    <Switch>
-      <Route path={routes.main} element={<Main />} />
-      <Route path={routes.top} element={<Top />} />
-      <Route path={routes.about} element={<About />} />
-      <Route path={routes.skills} element={<Skills />} />
-    </Switch>
-  </BrowserRouter>
+  // <BrowserRouter>
+  //   <Switch>
+  //     <Route exact path="/" element={<Main />} />
+  //     <Route path={routes.top} element={<Top />} />
+  //     <Route path={routes.about} element={<About />} />
+  //     <Route path={routes.skills} element={<Skills />} />
+  //   </Switch>
+  // </BrowserRouter>
+  // TODO : Routerの問題解決
+  <Main />
 );

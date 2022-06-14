@@ -23,6 +23,7 @@ export const Skills: React.FC = () => {
 };
 const wrapper = css({
   background: theme.colors.white,
+  padding: '200px 0',
   height: '800px',
 });
 
@@ -38,7 +39,7 @@ const heading = (inView: boolean) =>
     fontSize: '220px',
     fontWeight: 900,
     opacity: '0',
-    transition: '0.2s',
+    transition: '0.1s',
     ...(inView && {
       opacity: '1',
     }),
