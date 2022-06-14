@@ -3,10 +3,10 @@ import React from 'react';
 import { Routes as Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import { routes } from '@/config/routes';
-import { Main } from '@/ui/pages/Main';
-import { Top } from '@/ui/pages/Top';
-import { Skills } from '@/ui/pages/Skills';
-import { About } from '@/ui/pages/About';
+import { Main } from '@/pages/Main';
+import { Top } from '@/pages/Top';
+import { Skills } from '@/pages/Skills';
+import { About } from '@/pages/About';
 
 export const Routes: React.FC = () => (
   <BrowserRouter>

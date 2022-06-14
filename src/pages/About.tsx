@@ -27,7 +27,7 @@ const wrapper = css({
 
 const textBlock = css({
   margin: '0 auto ',
-  maxWidth: '900px',
+  maxWidth: '1024px',
   width: '80%',
   p: {
     fontSize: '34px',
