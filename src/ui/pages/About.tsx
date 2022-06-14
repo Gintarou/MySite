@@ -4,7 +4,7 @@ import { css } from '@emotion/react';
 
 import { theme } from '@/utils/theme';
 
-export const About = () => (
+export const About: React.FC = () => (
   <section css={wrapper}>
     <div css={textBlock}>
       <p>Hi! I&lsquo;m Rikuto Ozawa.</p>
@@ -22,7 +22,7 @@ export const About = () => (
 
 const wrapper = css({
   background: theme.colors.white,
-  padding: '100px 0',
+  padding: '150px 0',
 });
 
 const textBlock = css({

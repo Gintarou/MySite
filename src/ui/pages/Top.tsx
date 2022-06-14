@@ -43,7 +43,6 @@ const wrapper = css({
   display: 'flex',
   justifyContent: 'center',
   height: '100vh',
-  overflow: 'hidden',
   position: 'sticky',
   top: '0',
   // TODO : zIndex以外で考える
@@ -52,7 +51,8 @@ const wrapper = css({
 
 const background = css({
   left: '0',
-  objectFit: 'cover',
+  objectFit: 'contain',
+  overflow: 'hidden',
   position: 'absolute',
   top: '0',
 });
