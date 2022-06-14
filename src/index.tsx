@@ -4,11 +4,8 @@ import { Global, css } from '@emotion/react';
 import emotionReset from 'emotion-reset';
 import ReactDOM from 'react-dom/client';
 
-import './index.css';
-
 import reportWebVitals from '@/reportWebVitals';
-
-import { App } from './utils/App';
+import { Routes } from '@/utils/Routes';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -16,11 +13,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Global styles={css([emotionReset])} />
-    <App />
+    <Routes />
   </React.StrictMode>,
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
