@@ -22,7 +22,7 @@ export const About: React.FC = () => (
 
 const wrapper = css({
   background: theme.colors.white,
-  padding: '180px 0',
+  padding: '200px 0 100px',
 });
 
 const textBlock = css({

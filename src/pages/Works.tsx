@@ -2,20 +2,19 @@ import React from 'react';
 
 import { css } from '@emotion/react';
 
-import { SkillContent } from '@/ui/molecules/SkillContent';
 import { theme } from '@/utils/theme';
 
-export const Skills: React.FC = () => (
+export const Works: React.FC = () => (
   <section css={wrapper}>
     <div css={contentWrapper}>
-      <h1 css={heading}>Skills</h1>
-      <SkillContent />
+      <h1 css={heading}>Works</h1>
+      <p css={tmp}>in preparation 😣</p>
     </div>
   </section>
 );
 const wrapper = css({
   background: theme.colors.white,
-  padding: '100px 0',
+  padding: '200px 0',
 });
 const contentWrapper = css({
   width: '90%',
@@ -28,4 +27,10 @@ const heading = css({
   fontSize: '220px',
   fontWeight: 900,
   opacity: '1',
+});
+
+const tmp = css({
+  textAlign: 'center',
+  padding: '100px 0',
+  fontSize: '30px',
 });
