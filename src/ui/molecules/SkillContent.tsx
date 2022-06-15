@@ -36,19 +36,28 @@ const skillsWrapper = css({
   alignItems: 'center',
   display: 'flex',
   flexWrap: 'wrap',
+  justifyContent: 'space-between',
   marginTop: '100px',
 });
 
 const skillsTextWrapper = css({
-  width: '45%',
-
+  width: '80%',
+  margin: '0 auto 40px',
   p: {
     fontSize: '22px',
     margin: '0',
     marginBottom: '14px',
   },
+  '@media (min-width: 600px)': {
+    margin: '0',
+    width: '45%',
+  },
 });
 
 const skillsGraphWrapper = css({
-  width: '55%',
+  width: '80%',
+  margin: '0 auto',
+  '@media (min-width: 600px)': {
+    width: '55%',
+  },
 });

@@ -2,12 +2,13 @@ import React from 'react';
 
 import { css } from '@emotion/react';
 
+import { Heading } from '@/ui/atoms/Heading';
 import { theme } from '@/utils/theme';
 
 export const Works: React.FC = () => (
   <section css={wrapper}>
     <div css={contentWrapper}>
-      <h1 css={heading}>Works</h1>
+      <Heading>Works</Heading>
       <p css={tmp}>in preparation 😣</p>
     </div>
   </section>
@@ -20,13 +21,6 @@ const contentWrapper = css({
   width: '90%',
   margin: '0 auto',
   maxWidth: '1024px',
-});
-
-const heading = css({
-  color: '#00000016',
-  fontSize: '220px',
-  fontWeight: 900,
-  opacity: '1',
 });
 
 const tmp = css({
