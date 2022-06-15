@@ -9,20 +9,16 @@ import { Routes } from '@/utils/Routes';
 
 import { ScrollObserver } from './utils/scrollObserver';
 
-const font = css`
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  a,
-  span,
-  div {
-    font-family: 'Poppins';
-  }
-`;
+const font = css({
+  'html, body': {
+    fontFamily: 'Poppins',
+  },
+  p: {
+    lineHeight: '1.4em',
+    letterSpacing: '-0.010em',
+    margin: '14px 0',
+  },
+});
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,

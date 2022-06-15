@@ -13,8 +13,8 @@ export const About: React.FC = () => (
         Technology.
       </p>
       <p>
-        Dreaming of inspiring people with my electronic work, I&lsquo;m studying
-        every day.
+        Dreaming of inspiring people with my digital Monozukuri, I&lsquo;m
+        growing every day 🌱
       </p>
     </div>
   </section>
@@ -22,7 +22,7 @@ export const About: React.FC = () => (
 
 const wrapper = css({
   background: theme.colors.white,
-  padding: '150px 0',
+  padding: '180px 0',
 });
 
 const textBlock = css({
@@ -32,8 +32,5 @@ const textBlock = css({
   p: {
     fontSize: '34px',
     fontWeight: '400',
-    lineHeight: '1.4em',
-    letterSpacing: '-0.010em',
-    margin: '14px 0',
   },
 });

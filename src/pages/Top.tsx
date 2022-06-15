@@ -63,7 +63,8 @@ const headingWrapper = (progress: number) =>
     color: theme.colors.white,
     fontWeight: 'bold',
     textShadow: `4px 4px 3px ${theme.colors.blackAlpha40}`,
-    transform: `translateY(-${progress * 20}vh)`,
+    transform: `translateY(-${progress * 24}vh)`,
+    transition: '0.1s',
   });
 
 const heading1 = css({

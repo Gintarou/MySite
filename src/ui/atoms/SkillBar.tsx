@@ -12,7 +12,7 @@ export const SkillBar: React.FC<Props> = ({ language, percent, isView }) => (
   <div css={skillBox}>
     <p
       css={css({
-        width: '150px',
+        width: '30%',
         textAlign: 'center',
       })}
     >
@@ -37,7 +37,7 @@ const barWrapper = css({
   position: 'relative',
   background: '#dddddd',
   height: '100%',
-  width: '390px',
+  width: '70%',
 });
 
 const bar = (percent: number, isView: boolean) =>
@@ -47,9 +47,9 @@ const bar = (percent: number, isView: boolean) =>
     left: '0',
     position: 'absolute',
     top: '0',
-    transition: '0.4s',
+    transition: '0.8s',
     width: '0px',
     ...(isView && {
-      width: `calc(${percent * 380}px)`,
+      width: `calc(${percent * 100}%)`,
     }),
   });
