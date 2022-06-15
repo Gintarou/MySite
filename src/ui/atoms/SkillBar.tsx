@@ -10,14 +10,7 @@ type Props = {
 
 export const SkillBar: React.FC<Props> = ({ language, percent, isView }) => (
   <div css={skillBox}>
-    <p
-      css={css({
-        width: '30%',
-        textAlign: 'center',
-      })}
-    >
-      {language}
-    </p>
+    <p css={text}>{language}</p>
     <div css={barWrapper}>
       <div css={bar(percent, isView)} />
     </div>
@@ -27,17 +20,37 @@ export const SkillBar: React.FC<Props> = ({ language, percent, isView }) => (
 const skillBox = css({
   alignItems: 'center',
   display: 'flex',
+  flexWrap: 'wrap',
   fontSize: '18px',
   height: '20px',
   justifyContent: 'space-between',
-  marginBottom: '22px',
+  marginBottom: '40px',
+  '@media (min-width: 1025px)': {
+    marginBottom: '22px',
+  },
+});
+
+const text = css({
+  textAlign: 'left',
+  margin: '0',
+  width: '100%',
+  fontSize: '16px',
+  '@media (min-width: 1025px)': {
+    fontSize: '20px',
+    textAlign: 'center',
+    width: '30%',
+  },
 });
 
 const barWrapper = css({
   position: 'relative',
   background: '#dddddd',
   height: '100%',
-  width: '70%',
+  textAlign: 'center',
+  width: '100%',
+  '@media (min-width: 1025px)': {
+    width: '70%',
+  },
 });
 
 const bar = (percent: number, isView: boolean) =>

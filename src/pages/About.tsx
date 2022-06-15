@@ -22,7 +22,13 @@ export const About: React.FC = () => (
 
 const wrapper = css({
   background: theme.colors.white,
-  padding: '200px 0 100px',
+  padding: '100px 0 100px',
+  '@media (min-width: 600px)': {
+    padding: '150px 0 150px',
+  },
+  '@media (min-width: 1025px)': {
+    padding: '200px 0 200px',
+  },
 });
 
 const textBlock = css({
@@ -30,7 +36,13 @@ const textBlock = css({
   maxWidth: '1024px',
   width: '80%',
   p: {
-    fontSize: '34px',
+    fontSize: '24px',
     fontWeight: '400',
+    '@media (min-width: 600px)': {
+      fontSize: '30px',
+    },
+    '@media (min-width: 1025px)': {
+      fontSize: '34px',
+    },
   },
 });

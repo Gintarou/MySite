@@ -12,7 +12,7 @@ export const SkillContent: React.FC = () => {
   });
 
   return (
-    <div css={skillsWrapper} ref={ref}>
+    <div css={skillsWrapper}>
       <div css={skillsTextWrapper}>
         <p>I entered college in 2018 and started using PC.</p>
         <p>
@@ -20,7 +20,7 @@ export const SkillContent: React.FC = () => {
           research using machine learning and doing Web development 🙃
         </p>
       </div>
-      <div css={skillsGraphWrapper}>
+      <div css={skillsGraphWrapper} ref={ref}>
         <SkillBar language="HTML・CSS" percent={0.9} isView={inView} />
         <SkillBar language="React" percent={0.86} isView={inView} />
         <SkillBar language="TypeScript" percent={0.8} isView={inView} />
@@ -50,6 +50,9 @@ const skillsTextWrapper = css({
   },
   '@media (min-width: 600px)': {
     margin: '0',
+    width: '40%',
+  },
+  '@media (min-width: 1025px)': {
     width: '45%',
   },
 });

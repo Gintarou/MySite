@@ -16,7 +16,13 @@ export const Skills: React.FC = () => (
 );
 const wrapper = css({
   background: theme.colors.white,
-  padding: '100px 0',
+  padding: '0 0 100px',
+  '@media (min-width: 600px)': {
+    padding: '0 0 180px',
+  },
+  '@media (min-width: 1025px)': {
+    padding: '0 0 300px',
+  },
 });
 
 const contentWrapper = css({
