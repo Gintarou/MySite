@@ -5,7 +5,7 @@ import { Skills } from './Skills';
 import { Top } from './Top';
 import { Works } from './Works';
 
-export const Main = () => (
+export const Main: React.FC = () => (
   <>
     <Top />
     <About />
