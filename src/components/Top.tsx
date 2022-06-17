@@ -2,13 +2,11 @@ import React, { useRef, useContext } from 'react';
 
 import { css } from '@emotion/react';
 
-// TODO : assetsの型定義追加
-// @ts-ignore
 import BackgroundVideo from '@/assets/topBg.mp4';
 import { ScrollContext } from '@/utils/scrollObserver';
 import { theme } from '@/utils/theme';
 
-export const Top = () => {
+export const Top: React.FC = () => {
   const refContainer = useRef<HTMLElement>(null);
   const { scrollY } = useContext(ScrollContext);
 
