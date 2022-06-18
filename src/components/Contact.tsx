@@ -29,8 +29,7 @@ export const Contact: React.FC = () => {
 const wrapper = css({
   background: theme.colors.black,
   bottom: '0',
-  height: '300px',
-  padding: '100px 0 100px',
+  // height: '600px',
   position: 'sticky',
   zIndex: '-1',
   '@media (min-width: 600px)': {
@@ -44,5 +43,6 @@ const wrapper = css({
 const contentWrapper = css({
   width: '90%',
   margin: '0 auto',
+  padding: '100px 0',
   maxWidth: '1024px',
 });

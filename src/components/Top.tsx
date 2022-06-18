@@ -50,10 +50,12 @@ const wrapper = css({
 
 const background = css({
   left: '0',
-  objectFit: 'contain',
+  height: '100%',
+  objectFit: 'cover',
   overflow: 'hidden',
   position: 'absolute',
   top: '0',
+  width: '100%',
 });
 
 const headingWrapper = (progress: number) =>
