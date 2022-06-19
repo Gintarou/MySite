@@ -29,7 +29,7 @@ export const Top: React.FC = () => {
         css={background}
       />
       <div css={headingWrapper(progress)}>
-        <h1 css={heading1}>Hello.</h1>
+        <h1 css={heading1}>Hello world!</h1>
         <h2 css={heading2}>I&lsquo;m Kansai-jin :)</h2>
       </div>
     </section>
@@ -44,7 +44,6 @@ const wrapper = css({
   overflow: 'hidden',
   position: 'sticky',
   top: '0',
-  // TODO : zIndex以外で考える
   zIndex: '-1',
 });
 

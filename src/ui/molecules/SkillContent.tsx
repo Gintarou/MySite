@@ -3,7 +3,10 @@ import React from 'react';
 import { css } from '@emotion/react';
 import { useInView } from 'react-intersection-observer';
 
+import Face from '@/assets/reverseFace.png';
 import { SkillBar } from '@/ui/atoms/SkillBar';
+
+import { Emoji } from '../atoms/Emoji';
 
 export const SkillContent: React.FC = () => {
   const { ref, inView } = useInView({
@@ -17,7 +20,8 @@ export const SkillContent: React.FC = () => {
         <p>I entered college in 2018 and started using PC.</p>
         <p>
           At the same time, I started studying programming, and now I mainly
-          research using machine learning and doing Web development 🙃
+          research using machine learning and doing Web development
+          <Emoji image={Face} alt="🙃" />
         </p>
       </div>
       <div css={skillsGraphWrapper} ref={ref}>
@@ -26,7 +30,6 @@ export const SkillContent: React.FC = () => {
         <SkillBar language="TypeScript" percent={0.8} isView={inView} />
         <SkillBar language="Python" percent={0.79} isView={inView} />
         <SkillBar language="Rails" percent={0.6} isView={inView} />
-        {/* <SkillBar language="jQuery" percent={0.55} isView={inView} /> */}
       </div>
     </div>
   );
@@ -52,9 +55,6 @@ const skillsTextWrapper = css({
     margin: '0',
     width: '40%',
   },
-  '@media (min-width: 1025px)': {
-    width: '45%',
-  },
 });
 
 const skillsGraphWrapper = css({
@@ -62,5 +62,8 @@ const skillsGraphWrapper = css({
   margin: '0 auto',
   '@media (min-width: 600px)': {
     width: '55%',
+  },
+  '@media (min-width: 1025px)': {
+    width: '50%',
   },
 });

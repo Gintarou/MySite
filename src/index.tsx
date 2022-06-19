@@ -8,10 +8,12 @@ import reportWebVitals from '@/reportWebVitals';
 import { Routes } from '@/utils/Routes';
 
 import { ScrollObserver } from './utils/scrollObserver';
+import { theme } from './utils/theme';
 
 const font = css({
   'html, body': {
     fontFamily: 'Poppins',
+    color: theme.colors.textBlack,
   },
   p: {
     lineHeight: '1.4em',

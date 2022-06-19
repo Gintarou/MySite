@@ -2,6 +2,8 @@ import React from 'react';
 
 import { css } from '@emotion/react';
 
+import { theme } from '@/utils/theme';
+
 type Props = {
   children: React.ReactNode;
   color?: 'white' | 'black';
@@ -13,7 +15,7 @@ export const Heading: React.FC<Props> = ({ children, color = 'black' }) => (
 
 const heading = (color?: string) =>
   css({
-    color: '#00000016',
+    color: theme.colors.primary,
     fontSize: '25vw',
     fontWeight: 900,
     opacity: '1',

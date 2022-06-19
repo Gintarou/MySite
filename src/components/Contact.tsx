@@ -16,33 +16,40 @@ export const Contact: React.FC = () => {
   useEffect(() => {
     document.addEventListener('scroll', onScroll);
   });
-  if (!scroll) return <div />;
+  if (!scroll) return null;
 
   return (
     <section css={wrapper}>
       <div css={contentWrapper}>
-        <Heading color="white">Get in touch</Heading>
+        <Heading color="white">Get in touch?</Heading>
       </div>
+      <p css={copy}>&copy;2022 RikutoOzawa. Allrights reserved</p>
     </section>
   );
 };
 const wrapper = css({
-  background: theme.colors.black,
+  background: theme.colors.primary,
   bottom: '0',
-  // height: '600px',
+  minHeight: '100vh',
+  paddingBottom: '0',
   position: 'sticky',
   zIndex: '-1',
-  '@media (min-width: 600px)': {
-    padding: '0 0 180px',
-  },
-  '@media (min-width: 1025px)': {
-    padding: '0 0 300px',
-  },
 });
 
 const contentWrapper = css({
   width: '90%',
   margin: '0 auto',
-  padding: '100px 0',
+  padding: '100px 0 0',
   maxWidth: '1024px',
+});
+
+const copy = css({
+  top: '0',
+  color: 'white',
+  fontSize: '14px',
+  left: '50%',
+  margin: '5px auto 0',
+  position: 'absolute',
+  textAlign: 'center',
+  transform: 'translateX(-50%)',
 });

@@ -26,7 +26,7 @@ const skillBox = css({
   justifyContent: 'space-between',
   marginBottom: '40px',
   '@media (min-width: 1025px)': {
-    marginBottom: '22px',
+    // marginBottom: '22px',
   },
 });
 
@@ -36,9 +36,9 @@ const text = css({
   width: '100%',
   fontSize: '16px',
   '@media (min-width: 1025px)': {
-    fontSize: '20px',
-    textAlign: 'center',
-    width: '30%',
+    // fontSize: '20px',
+    // textAlign: 'center',
+    // width: '30%',
   },
 });
 
@@ -49,7 +49,7 @@ const barWrapper = css({
   textAlign: 'center',
   width: '100%',
   '@media (min-width: 1025px)': {
-    width: '70%',
+    // width: '70%',
   },
 });
 

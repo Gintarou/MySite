@@ -2,20 +2,57 @@ import React from 'react';
 
 import { css } from '@emotion/react';
 
+import Leaf from '@/assets/leaf.png';
+import Face from '@/assets/myFace.jpeg';
+import { Emoji } from '@/ui/atoms/Emoji';
 import { theme } from '@/utils/theme';
+
+const bio = [
+  {
+    year: '1999',
+    content: 'Born in Osaka, Japan',
+  },
+  {
+    year: '2022',
+    content:
+      'Completed the Bachelor of System Design Engineering, Faculty of Robotics & Design Engineering at Osaka Institute of Technology(大阪工業大学 ロボティクス&デザイン工学部 システムデザイン工学科学士過程 修了)',
+  },
+  {
+    year: 'present',
+    content:
+      'Doing the Master of System Design Engineering, Faculty of Robotics & Design Engineering at Osaka Institute of Technology(大阪工業大学 ロボティクス&デザイン工学専攻 システムデザインコース修士過程 在学中)',
+  },
+];
 
 export const About: React.FC = () => (
   <section css={wrapper}>
     <div css={textBlock}>
-      <p>Hi! I&lsquo;m Rikuto Ozawa.</p>
+      <p>Hi, I&lsquo;m Rikuto.</p>
       <p>
-        I&lsquo;m doing a Master&lsquo;s degree at Osaka Institute of
-        Technology.
+        Dreaming of inspiring people with digital crafts, I&lsquo;m growing
+        every day
+        <Emoji image={Leaf} alt="🌱" />
       </p>
-      <p>
-        Dreaming of inspiring people with my digital Monozukuri, I&lsquo;m
-        growing every day 🌱
-      </p>
+      <div css={bioWrapper}>
+        <h2>Biography</h2>
+        <div css={profileWrapper}>
+          <img src={Face} alt="rikuto's face" css={face} />
+          <div css={profileTextBlock}>
+            <p>Rikuto Ozawa</p>
+            <p>
+              <span>小澤 陸人</span>
+            </p>
+          </div>
+        </div>
+        <div css={bioBlock}>
+          {bio.map((c, i) => (
+            <div key={i} css={bioRow}>
+              <div css={year}>{c.year}</div>
+              <div css={content}>{c.content}</div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   </section>
 );
@@ -33,16 +70,78 @@ const wrapper = css({
 
 const textBlock = css({
   margin: '0 auto ',
-  maxWidth: '1024px',
+  maxWidth: '800px',
   width: '80%',
-  p: {
+  'p, h2': {
     fontSize: '24px',
-    fontWeight: '400',
     '@media (min-width: 600px)': {
-      fontSize: '30px',
+      fontSize: '26px',
     },
     '@media (min-width: 1025px)': {
-      fontSize: '34px',
+      fontSize: '28px',
     },
   },
+  p: {
+    fontWeight: '400',
+  },
+  h2: {
+    fontWeight: '700',
+  },
+});
+
+const bioWrapper = css({
+  padding: '50px 0 0',
+  margin: '0 auto',
+  h2: {
+    color: '#555555',
+  },
+});
+
+const profileWrapper = css({
+  alignItems: 'center',
+  display: 'flex',
+  justifyContent: 'center',
+  padding: '40px 0',
+});
+
+const face = css({
+  borderRadius: '50%',
+  height: '100px',
+  border: '3px solid #aaaaaa',
+  marginRight: '50px',
+});
+
+const profileTextBlock = css({
+  p: {
+    margin: '0',
+  },
+  span: {
+    fontFamily: 'M PLUS 1p',
+    fontSize: '0.8em',
+  },
+});
+
+const bioBlock = css({
+  marginTop: '0',
+});
+
+const bioRow = css({
+  alignItems: 'top',
+  display: 'flex',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  justifyContent: 'space-between',
+  lineHeight: '1.4em',
+  paddingBottom: '1em',
+  '&:last-child': {
+    paddingBottom: '0',
+  },
+});
+
+const year = css({
+  width: '80px',
+});
+
+const content = css({
+  width: 'calc(100% - 80px)',
 });
