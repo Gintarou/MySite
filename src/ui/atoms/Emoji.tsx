@@ -13,7 +13,7 @@ export const Emoji: React.FC<Props> = ({ image, alt }) => (
 
 const imageStyle = css({
   display: 'inline-block',
-  height: '1.2em',
+  height: '1em',
   paddingLeft: '0.5em',
-  verticalAlign: 'top',
+  verticalAlign: 'middle',
 });
