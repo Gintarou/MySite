@@ -21,7 +21,8 @@ export const Contact: React.FC = () => {
   return (
     <section css={wrapper}>
       <div css={contentWrapper}>
-        <Heading color="white">Get in touch?</Heading>
+        <Heading color="white">Works</Heading>
+        <p css={tmp}>in preparation</p>
       </div>
       <p css={copy}>&copy;2022 Rikuto Ozawa. Allrights reserved</p>
     </section>
@@ -30,6 +31,7 @@ export const Contact: React.FC = () => {
 const wrapper = css({
   background: theme.colors.black,
   bottom: '0',
+  color: 'white',
   minHeight: '100vh',
   paddingBottom: '0',
   position: 'sticky',
@@ -43,9 +45,14 @@ const contentWrapper = css({
   maxWidth: '1024px',
 });
 
+const tmp = css({
+  textAlign: 'center',
+  padding: '100px 0',
+  fontSize: '30px',
+});
+
 const copy = css({
   top: '50%',
-  color: 'white',
   fontSize: '14px',
   left: '0',
   position: 'absolute',

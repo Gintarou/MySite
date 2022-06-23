@@ -9,7 +9,7 @@ export const Works: React.FC = () => (
   <section css={wrapper}>
     <div css={contentWrapper}>
       <Heading>Works</Heading>
-      <p css={tmp}>in preparation 😣</p>
+      <p css={tmp}>in preparation</p>
     </div>
   </section>
 );

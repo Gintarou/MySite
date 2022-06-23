@@ -10,7 +10,7 @@ import { Emoji } from '../atoms/Emoji';
 
 export const SkillContent: React.FC = () => {
   const { ref, inView } = useInView({
-    rootMargin: '-40%',
+    rootMargin: '-35%',
     triggerOnce: true,
   });
 
@@ -18,9 +18,10 @@ export const SkillContent: React.FC = () => {
     <div css={skillsWrapper}>
       <div css={skillsTextWrapper}>
         <p>I entered college in 2018 and started using PC.</p>
+        <p>At the same time, I started studying programming.</p>
         <p>
-          At the same time, I started studying programming, and now I mainly
-          research using machine learning and doing Web development
+          Now, I mainly research using machine learning and doing Web
+          development
           <Emoji image={Face} alt="🙃" />
         </p>
       </div>

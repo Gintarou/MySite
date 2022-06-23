@@ -14,17 +14,17 @@ const bio = [
   },
   {
     year: '2018',
-    content: 'Born in Osaka, Japan',
+    content: 'Got PC, Macbook Air',
   },
   {
     year: '2022',
     content:
-      'Completed the Bachelor of System Design Engineering, Faculty of Robotics & Design Engineering at Osaka Institute of Technology(大阪工業大学 ロボティクス&デザイン工学部 システムデザイン工学科学士過程 修了)',
+      'Completed the Bachelor of System Design Engineering, Faculty of Robotics & Design Engineering at Osaka Institute of Technology(大阪工業大学 ロボティクス&デザイン工学部 システムデザイン工学科 学士過程 卒業)',
   },
   {
     year: 'present',
     content:
-      'Doing the Master of System Design Engineering, Faculty of Robotics & Design Engineering at Osaka Institute of Technology(大阪工業大学 ロボティクス&デザイン工学専攻 システムデザインコース修士過程 在学中)',
+      'Doing the Master of System Design Engineering, Faculty of Robotics & Design Engineering at Osaka Institute of Technology(大阪工業大学 ロボティクス&デザイン工学専攻 システムデザインコース 修士課程 在学中)',
   },
 ];
 
