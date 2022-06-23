@@ -13,6 +13,10 @@ const bio = [
     content: 'Born in Osaka, Japan',
   },
   {
+    year: '2018',
+    content: 'Born in Osaka, Japan',
+  },
+  {
     year: '2022',
     content:
       'Completed the Bachelor of System Design Engineering, Faculty of Robotics & Design Engineering at Osaka Institute of Technology(大阪工業大学 ロボティクス&デザイン工学部 システムデザイン工学科学士過程 修了)',

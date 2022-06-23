@@ -23,12 +23,12 @@ export const Contact: React.FC = () => {
       <div css={contentWrapper}>
         <Heading color="white">Get in touch?</Heading>
       </div>
-      <p css={copy}>&copy;2022 RikutoOzawa. Allrights reserved</p>
+      <p css={copy}>&copy;2022 Rikuto Ozawa. Allrights reserved</p>
     </section>
   );
 };
 const wrapper = css({
-  background: theme.colors.primary,
+  background: theme.colors.black,
   bottom: '0',
   minHeight: '100vh',
   paddingBottom: '0',
@@ -44,12 +44,11 @@ const contentWrapper = css({
 });
 
 const copy = css({
-  top: '0',
+  top: '50%',
   color: 'white',
   fontSize: '14px',
-  left: '50%',
-  margin: '5px auto 0',
+  left: '0',
   position: 'absolute',
-  textAlign: 'center',
-  transform: 'translateX(-50%)',
+  transform: 'translateY(-50%)',
+  writingMode: 'vertical-lr',
 });
