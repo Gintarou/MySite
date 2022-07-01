@@ -14,7 +14,7 @@ const bio = [
   },
   {
     year: '2018',
-    content: 'Got PC, Macbook Air',
+    content: 'Got Macbook Air, and started programming',
   },
   {
     year: '2022',
