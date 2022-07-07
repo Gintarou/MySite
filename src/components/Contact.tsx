@@ -42,7 +42,7 @@ const contentWrapper = css({
   width: '90%',
   margin: '0 auto',
   padding: '100px 0 0',
-  maxWidth: '1024px',
+  maxWidth: '800px',
 });
 
 const tmp = css({

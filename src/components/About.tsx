@@ -4,38 +4,45 @@ import { css } from '@emotion/react';
 
 import Leaf from '@/assets/leaf.png';
 import Face from '@/assets/myFace.jpeg';
+import EmojiFace from '@/assets/reverseFace.png';
 import { Emoji } from '@/ui/atoms/Emoji';
 import { theme } from '@/utils/theme';
 
 const bio = [
   {
     year: '1999',
-    content: 'Born in Osaka, Japan',
+    content: '誕生',
   },
   {
     year: '2018',
-    content: 'Got Macbook Air, and started programming',
+    content: '大阪府立三島高等学校卒業',
+  },
+  {
+    year: '2018',
+    content: '大学入学をきっかけにPCを手に入れる & プログラミングの勉強を始める',
   },
   {
     year: '2022',
     content:
-      'Completed the Bachelor of System Design Engineering, Faculty of Robotics & Design Engineering at Osaka Institute of Technology(大阪工業大学 ロボティクス&デザイン工学部 システムデザイン工学科 学士過程 卒業)',
+      '大阪工業大学 ロボティクス&デザイン工学部 システムデザイン工学科 学士過程 卒業',
   },
   {
     year: 'present',
     content:
-      'Doing the Master of System Design Engineering, Faculty of Robotics & Design Engineering at Osaka Institute of Technology(大阪工業大学 ロボティクス&デザイン工学専攻 システムデザインコース 修士課程 在学中)',
+      '大阪工業大学 ロボティクス&デザイン工学専攻 システムデザインコース 修士課程 在学中',
   },
 ];
 
 export const About: React.FC = () => (
   <section css={wrapper}>
     <div css={textBlock}>
-      <p>Hi, I&lsquo;m Rikuto.</p>
       <p>
-        Dreaming of inspiring people with digital crafts, I&lsquo;m growing
-        every day
+        デジタルなモノづくりを通じていろんな人に感動を与えるを目標に、毎日勉強の日々をすごしています。
         <Emoji image={Leaf} alt="🌱" />
+      </p>
+      <p>
+        2018年に大学に入学してパソコンに触り始めたと同時にプログラミングの勉強を始めました。現在は主にWeb開発と機械学習に関する研究を行っています。
+        <Emoji image={EmojiFace} alt="🙃" />
       </p>
       <div css={bioWrapper}>
         <h2>Biography</h2>
@@ -64,12 +71,6 @@ export const About: React.FC = () => (
 const wrapper = css({
   background: theme.colors.white,
   padding: '100px 0 100px',
-  '@media (min-width: 600px)': {
-    padding: '150px 0 150px',
-  },
-  '@media (min-width: 1025px)': {
-    padding: '200px 0 200px',
-  },
 });
 
 const textBlock = css({
@@ -77,12 +78,12 @@ const textBlock = css({
   maxWidth: '800px',
   width: '80%',
   'p, h2': {
-    fontSize: '24px',
+    fontSize: theme.fontSizes.phone,
     '@media (min-width: 600px)': {
-      fontSize: '26px',
+      fontSize: theme.fontSizes.tablet,
     },
     '@media (min-width: 1025px)': {
-      fontSize: '28px',
+      fontSize: theme.fontSizes.pc,
     },
   },
   p: {
@@ -97,6 +98,7 @@ const bioWrapper = css({
   padding: '50px 0 0',
   margin: '0 auto',
   h2: {
+    fontSize: '1.5em',
     color: '#555555',
   },
 });

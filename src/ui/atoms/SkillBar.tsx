@@ -22,7 +22,7 @@ const skillBox = css({
   display: 'flex',
   flexWrap: 'wrap',
   fontSize: '18px',
-  height: '20px',
+  height: '1em',
   justifyContent: 'space-between',
   marginBottom: '40px',
   '@media (min-width: 1025px)': {

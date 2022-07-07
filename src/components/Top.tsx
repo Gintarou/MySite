@@ -60,13 +60,17 @@ const background = css({
 const headingWrapper = (progress: number) =>
   css({
     color: theme.colors.white,
+    fontSize: '40px',
     fontWeight: 'bold',
     textShadow: `4px 4px 3px ${theme.colors.blackAlpha40}`,
     transform: `translateY(-${progress * 24}vh)`,
+    '@media (min-width: 600px)': {
+      fontSize: '60px',
+    },
   });
 
 const heading1 = css({
-  fontSize: '60px',
+  fontWeight: '900',
   lineHeight: '1.1em',
 });
 

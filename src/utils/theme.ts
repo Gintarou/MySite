@@ -6,4 +6,9 @@ export const theme = {
     textBlack: '#443435',
     primary: '#a83e4a',
   },
+  fontSizes: {
+    phone: '14px',
+    tablet: '16px',
+    pc: '18px',
+  }
 };

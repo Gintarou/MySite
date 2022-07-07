@@ -28,5 +28,5 @@ const wrapper = css({
 const contentWrapper = css({
   width: '90%',
   margin: '0 auto',
-  maxWidth: '1024px',
+  maxWidth: '800px',
 });

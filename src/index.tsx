@@ -12,12 +12,19 @@ import { theme } from './utils/theme';
 
 const font = css({
   'html, body': {
-    fontFamily: 'Poppins',
+    fontFamily: 'Noto Sans JP',
     color: theme.colors.textBlack,
+    fontSize: theme.fontSizes.phone,
+    '@media (min-width: 600px)': {
+      fontSize: theme.fontSizes.tablet,
+    },
+    '@media (min-width: 1025px)': {
+      fontSize: theme.fontSizes.pc,
+    },
   },
   p: {
-    lineHeight: '1.4em',
-    letterSpacing: '-0.010em',
+    lineHeight: '1.6em',
+    letterSpacing: '0.1em',
     margin: '14px 0',
   },
 });

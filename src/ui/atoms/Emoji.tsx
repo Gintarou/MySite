@@ -14,6 +14,6 @@ export const Emoji: React.FC<Props> = ({ image, alt }) => (
 const imageStyle = css({
   display: 'inline-block',
   height: '1em',
-  paddingLeft: '0.5em',
+  paddingLeft: '0.2em',
   verticalAlign: 'middle',
 });
