@@ -16,10 +16,10 @@ const font = css({
     color: theme.colors.textBlack,
     fontSize: theme.fontSizes.phone,
     '@media (min-width: 600px)': {
-      fontSize: theme.fontSizes.tablet,
+      // fontSize: theme.fontSizes.tablet,
     },
     '@media (min-width: 1025px)': {
-      fontSize: theme.fontSizes.pc,
+      // fontSize: theme.fontSizes.pc,
     },
   },
   p: {

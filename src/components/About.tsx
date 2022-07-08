@@ -6,6 +6,7 @@ import Leaf from '@/assets/leaf.png';
 import Face from '@/assets/myFace.jpeg';
 import EmojiFace from '@/assets/reverseFace.png';
 import { Emoji } from '@/ui/atoms/Emoji';
+import { Heading } from '@/ui/atoms/Heading';
 import { theme } from '@/utils/theme';
 
 const bio = [
@@ -37,15 +38,19 @@ export const About: React.FC = () => (
   <section css={wrapper}>
     <div css={textBlock}>
       <p>
-        デジタルなモノづくりを通じていろんな人に感動を与えるを目標に、毎日勉強の日々をすごしています。
+        はじめまして。現在、大学院修士１年のおざわです。
+      </p>
+      <p>
+        デジタルでのモノづくりを通じていろんな人の心を動かせるようになることを目標に、毎日勉強の日々をすごしています。
         <Emoji image={Leaf} alt="🌱" />
       </p>
       <p>
         2018年に大学に入学してパソコンに触り始めたと同時にプログラミングの勉強を始めました。現在は主にWeb開発と機械学習に関する研究を行っています。
         <Emoji image={EmojiFace} alt="🙃" />
       </p>
+      <p>ちなみに、勉強はすべて独学です。</p>
       <div css={bioWrapper}>
-        <h2>Biography</h2>
+        <Heading>Biography</Heading>
         <div css={profileWrapper}>
           <img src={Face} alt="rikuto's face" css={face} />
           <div css={profileTextBlock}>
@@ -70,22 +75,13 @@ export const About: React.FC = () => (
 
 const wrapper = css({
   background: theme.colors.white,
-  padding: '100px 0 100px',
+  padding: '130px 0',
 });
 
 const textBlock = css({
   margin: '0 auto ',
   maxWidth: '800px',
   width: '80%',
-  'p, h2': {
-    fontSize: theme.fontSizes.phone,
-    '@media (min-width: 600px)': {
-      fontSize: theme.fontSizes.tablet,
-    },
-    '@media (min-width: 1025px)': {
-      fontSize: theme.fontSizes.pc,
-    },
-  },
   p: {
     fontWeight: '400',
   },
@@ -95,7 +91,7 @@ const textBlock = css({
 });
 
 const bioWrapper = css({
-  padding: '50px 0 0',
+  padding: '150px 0',
   margin: '0 auto',
   h2: {
     fontSize: '1.5em',
@@ -107,7 +103,7 @@ const profileWrapper = css({
   alignItems: 'center',
   display: 'flex',
   justifyContent: 'center',
-  padding: '40px 0',
+  padding: '80px 0',
 });
 
 const face = css({
@@ -123,7 +119,6 @@ const profileTextBlock = css({
   },
   span: {
     fontFamily: 'M PLUS 1p',
-    fontSize: '0.8em',
   },
 });
 

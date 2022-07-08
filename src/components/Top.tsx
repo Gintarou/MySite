@@ -38,6 +38,8 @@ export const Top: React.FC = () => {
 
 const wrapper = css({
   alignItems: 'center',
+  border: `20px solid ${theme.colors.white}`,
+  boxSizing: 'border-box',
   display: 'flex',
   justifyContent: 'center',
   height: '100vh',
