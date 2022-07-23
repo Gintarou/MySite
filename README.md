@@ -1,6 +1,6 @@
 # ポートフォリオサイト
 
-React(Create React App) / TypeScriptを使って作成
+React(Create React App) / TypeScriptを使って作成。
 
 **ポイント**
 - 一応アトミックデザイン意識
