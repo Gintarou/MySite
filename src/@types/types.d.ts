@@ -12,3 +12,8 @@ declare module '*.jpeg' {
   const jpegImage: string;
   export default jpegImage;
 }
+
+declare module '*.jpg' {
+  const jpegImage: string;
+  export default jpegImage;
+}

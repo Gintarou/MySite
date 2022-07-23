@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { Main } from '@/components/Main';
+import { Main } from '@/ui/pages';
 
-export const Routes: React.FC = () => (
-  <Main />
-);
+// NOTE: ルーティングするときはここで
+export const Routes: React.FC = () => <Main />;

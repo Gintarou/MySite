@@ -16,8 +16,9 @@ export const Heading: React.FC<Props> = ({ children, color = 'black' }) => (
 const heading = (color?: string) =>
   css({
     fontWeight: '900',
+    fontSize: '1.7em',
     opacity: '1',
-    fontSize: '1.5em',
+    padding: '2em 0',
     color: '#555555',
     ...(color === 'white' && {
       color: '#ffffff',

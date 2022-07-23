@@ -10,5 +10,9 @@ export const theme = {
     phone: '14px',
     tablet: '16px',
     pc: '18px',
+  },
+  width: {
+    
+    pc: '910px',
   }
 };
