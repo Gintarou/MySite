@@ -19,9 +19,7 @@ export const Skills: React.FC = () => (
       最近はクリエイティブなことがしたくてイラスト(Procreate)、音楽(Logic
       Pro)、3D系(Blender)などいろいろなことを勉強しています。
     </p>
-    <p css={tmpNote}>
-      &#x203b;もう少しわかりやすくお伝えできるよう、現在修正中です
-    </p>
+    <p css={tmpNote}>&#x203b;わかりやすくお伝えできるよう、現在修正中です</p>
   </SectionWrapper>
 );
 

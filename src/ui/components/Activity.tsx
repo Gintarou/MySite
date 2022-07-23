@@ -16,5 +16,4 @@ export const Activity: React.FC = () => (
 const tmp = css({
   textAlign: 'center',
   padding: '100px 0',
-  fontSize: '30px',
 });

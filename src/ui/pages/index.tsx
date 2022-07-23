@@ -3,10 +3,10 @@ import React from 'react';
 import { css } from '@emotion/react';
 
 import { About } from '@/ui/components/About';
-// import { Career } from '@/ui/components/Career';
 import { Activity } from '@/ui/components/Activity';
 import { Skills } from '@/ui/components/Skills';
 import { Top } from '@/ui/components/Top';
+import { Footer } from '@/ui/organisms/Footer';
 import { theme } from '@/utils/theme';
 
 export const Main: React.FC = () => (
@@ -15,11 +15,11 @@ export const Main: React.FC = () => (
     <div css={bg}>
       <div css={wrapper}>
         <About />
-        {/* <Career /> */}
         <Skills />
         <Activity />
       </div>
     </div>
+    <Footer />
   </>
 );
 
