@@ -5,7 +5,7 @@ import emotionReset from 'emotion-reset';
 import ReactDOM from 'react-dom/client';
 
 import reportWebVitals from '@/reportWebVitals';
-import { Routes } from '@/utils/Routes';
+import { App } from '@/utils/App';
 
 import { ScrollObserver } from './utils/scrollObserver';
 import { theme } from './utils/theme';
@@ -32,11 +32,12 @@ const font = css({
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
+
 root.render(
   <React.StrictMode>
     <ScrollObserver>
       <Global styles={[emotionReset, font]} />
-      <Routes />
+      <App />
     </ScrollObserver>
   </React.StrictMode>,
 );

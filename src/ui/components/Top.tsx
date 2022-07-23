@@ -22,7 +22,7 @@ export const Top: React.FC = () => {
     <section css={wrapper(progress)} ref={refContainer}>
       <img src={BackgroundImage} alt="" css={background} />
       <div css={headingWrapper(progress)}>
-        <h1 css={heading1}>コンニチハ、セカイ。:)</h1>
+        <h1 css={heading1}>Hello, world.</h1>
       </div>
     </section>
   );
