@@ -1,6 +1,5 @@
 export const routes = {
-  main: '/',
-  // top: '/top',
-  // about: '/about',
-  // skills: '/skills',
+  index: '/',
+  activity1: '/activity1',
+  notFound: '/*',
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { css } from '@emotion/react';
+import { motion } from 'framer-motion';
 
 import { About } from '@/ui/components/About';
 import { Activity } from '@/ui/components/Activity';
@@ -10,7 +11,12 @@ import { Footer } from '@/ui/organisms/Footer';
 import { theme } from '@/utils/theme';
 
 export const Main: React.FC = () => (
-  <>
+  <motion.div
+    animate={{ opacity: 1 }}
+    initial={{ opacity: 0 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 0.5 }}
+  >
     <Top />
     <div css={bg}>
       <div css={wrapper}>
@@ -20,7 +26,7 @@ export const Main: React.FC = () => (
       </div>
     </div>
     <Footer />
-  </>
+  </motion.div>
 );
 
 const bg = css({

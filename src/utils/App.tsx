@@ -1,15 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Routes } from '@/utils/Routes';
-import { Loading } from '@/ui/atoms/Loading';
+import React from 'react';
+import { AnimatedRoutes as Routes } from '@/utils/Routes';
+import { BrowserRouter } from 'react-router-dom';
 
-export const App: React.FC = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => setIsLoading(false), 1000);
-
-    // return setIsLoading(true);
-  }, []);
-
-  return <>{isLoading ? <Loading /> : <Routes />}</>;
-};
+export const App: React.FC = () => (
+  <BrowserRouter>
+    <Routes />
+  </BrowserRouter>
+);
