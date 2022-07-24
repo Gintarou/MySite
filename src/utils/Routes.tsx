@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { AnimatePresence } from 'framer-motion';
+import { Footer } from '@/ui/organisms/Footer';
 
 import { Main } from '@/ui/pages';
 import { Routes, Route } from 'react-router-dom';
@@ -12,7 +13,7 @@ import { useLocation } from 'react-router-dom';
 // NOTE: ルーティングするときはここで
 export const AnimatedRoutes: React.FC = () => {
   const location = useLocation();
-  console.log(location.pathname);
+
   return (
     <AnimatePresence exitBeforeEnter>
       <Routes location={location} key={location.pathname}>

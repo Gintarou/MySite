@@ -1,18 +1,11 @@
 import React from 'react';
 
 import { css } from '@emotion/react';
-import { motion } from 'framer-motion';
+
+import { Wrapper } from '@/ui/organisms/MotionWrapper';
 
 export const Activity1: React.FC = () => (
-  <motion.div
-    // initial
-    initial={{ opacity: 0 }}
-    // mounted
-    animate={{ opacity: 1 }}
-    // unmount
-    exit={{ opacity: 0 }}
-    transition={{ duration: 0.5 }}
-  >
+  <Wrapper>
     <div css={test}>
       Acitvit y1
       <p>klasjdfklasjf</p>
@@ -28,7 +21,7 @@ export const Activity1: React.FC = () => (
       <p>klasjdfklasjf</p>
       <p>klasjdfklasjf</p>
     </div>
-  </motion.div>
+  </Wrapper>
 );
 
 const test = css({
