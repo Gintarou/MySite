@@ -3,6 +3,7 @@ import React from 'react';
 import { Global, css } from '@emotion/react';
 import emotionReset from 'emotion-reset';
 import ReactDOM from 'react-dom/client';
+import { HashRouter as Router } from 'react-router-dom';
 
 import reportWebVitals from '@/reportWebVitals';
 import { App } from '@/utils/App';
@@ -35,10 +36,12 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <ScrollObserver>
-      <Global styles={[emotionReset, font]} />
-      <App />
-    </ScrollObserver>
+    <Router>
+      <ScrollObserver>
+        <Global styles={[emotionReset, font]} />
+        <App />
+      </ScrollObserver>
+    </Router>
   </React.StrictMode>,
 );
 

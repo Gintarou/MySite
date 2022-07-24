@@ -16,8 +16,8 @@ export const AnimatedRoutes: React.FC = () => {
     <AnimatePresence exitBeforeEnter>
       <Routes location={location} key={location.pathname}>
         <Route index element={<Main />} />
-        <Route path="/activity1" element={<Activity1 />} />
-        <Route path="/*" element={<NotFound />} />
+        <Route path="activity1" element={<Activity1 />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>
   );

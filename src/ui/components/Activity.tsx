@@ -14,19 +14,19 @@ export const Activity: React.FC = () => (
     <Heading>アクティビティ</Heading>
     <div css={wrapper}>
       <div css={boxWrapper}>
-        <Link to="/activity1" css={boxLink}>
+        <Link to="activity1" css={boxLink}>
           <img css={image} src={Thumb1} alt="ポートフォリオ" />
           <p>オザワリクトのポートフォリオ</p>
         </Link>
       </div>
       <div css={boxWrapper}>
-        <Link to="/activity1" css={boxLink}>
+        <Link to="activity1" css={boxLink}>
           <img css={image} src={Thumb1} alt="ポートフォリオ" />
           <p>オザワリクトのポートフォリオ</p>
         </Link>
       </div>
       <div css={boxWrapper}>
-        <Link to="/activity1" css={boxLink}>
+        <Link to="activity1" css={boxLink}>
           <img css={image} src={Thumb1} alt="ポートフォリオ" />
           <p>オザワリクトのポートフォリオ</p>
         </Link>
