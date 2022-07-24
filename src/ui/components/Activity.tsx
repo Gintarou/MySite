@@ -4,7 +4,6 @@ import { css } from '@emotion/react';
 import { Link } from 'react-router-dom';
 
 import Thumb1 from '@/assets/activity1thumb.png';
-import { routes } from '@/config/routes';
 import { Heading } from '@/ui/atoms/Heading';
 import { theme } from '@/utils/theme';
 
@@ -15,28 +14,22 @@ export const Activity: React.FC = () => (
     <Heading>アクティビティ</Heading>
     <div css={wrapper}>
       <div css={boxWrapper}>
-        <div css={box}>
-          <Link to={routes.activity1} css={boxLink}>
-            <img css={image} src={Thumb1} alt="ポートフォリオ" />
-            <p>オザワリクトのポートフォリオ</p>
-          </Link>
-        </div>
+        <Link to="/activity1" css={boxLink}>
+          <img css={image} src={Thumb1} alt="ポートフォリオ" />
+          <p>オザワリクトのポートフォリオ</p>
+        </Link>
       </div>
       <div css={boxWrapper}>
-        <div css={box}>
-          <Link to={routes.activity1} css={boxLink}>
-            <img css={image} src={Thumb1} alt="ポートフォリオ" />
-            <p>オザワリクトのポートフォリオ</p>
-          </Link>
-        </div>
+        <Link to="/activity1" css={boxLink}>
+          <img css={image} src={Thumb1} alt="ポートフォリオ" />
+          <p>オザワリクトのポートフォリオ</p>
+        </Link>
       </div>
       <div css={boxWrapper}>
-        <div css={box}>
-          <Link to={routes.activity1} css={boxLink}>
-            <img css={image} src={Thumb1} alt="ポートフォリオ" />
-            <p>オザワリクトのポートフォリオ</p>
-          </Link>
-        </div>
+        <Link to="/activity1" css={boxLink}>
+          <img css={image} src={Thumb1} alt="ポートフォリオ" />
+          <p>オザワリクトのポートフォリオ</p>
+        </Link>
       </div>
     </div>
   </SubSectionWrapper>
@@ -57,24 +50,19 @@ const boxWrapper = css({
   width: 'calc((100% / 3) - 6px)',
 });
 
-const box = css({
-  // TODO: themeで色指定
-  background: '#efefe8',
-  height: '100%',
-  position: 'absolute',
-  transition: '0.3s',
-  width: '100%',
-  ':hover': {
-    transform: 'translate(-4px, -4px)',
-  },
-});
-
 const boxLink = css({
   color: theme.colors.black,
   display: 'block',
   height: '100%',
   textDecoration: 'none',
   width: '100%',
+  // TODO: themeで色指定
+  background: '#efefe8',
+  position: 'absolute',
+  transition: '0.3s',
+  ':hover': {
+    transform: 'translate(-4px, -4px)',
+  },
 });
 
 const image = css({
