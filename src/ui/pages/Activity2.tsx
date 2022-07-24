@@ -11,11 +11,7 @@ import { SubSectionWrapper } from '../organisms/SubSectionWrapper';
 export const Activity2: React.FC = () => (
   <Wrapper>
     <SubSectionWrapper>
-      <Heading>
-        既存のWebサイトでジェスチャー操作が可能になる
-        <br />
-        ソフトウェアモジュール
-      </Heading>
+      <Heading>ジェスチャー操作が可能になるソフトウェアモジュール</Heading>
       <img css={mainImage} src={MainImage} alt="ポートフォリオの画像" />
       <div css={textWrapper}>
         <div css={infoTextWrapper}>
@@ -32,7 +28,7 @@ export const Activity2: React.FC = () => (
             近年蔓延している新型コロナウイルスの問題を受け、既存のWeb環境下で非接触操作ができる、ソフトウェアモジュールの開発を行いました。
           </p>
           <p>
-            画像のように、Webカメラさえあればハンドジェスチャーで操作が可能になります。
+            特殊な環境はセンサーは使わず、機械学習の技術を用いることで、画像のようにWebカメラさえあればハンドジェスチャーで操作が可能になります。
           </p>
         </div>
       </div>
