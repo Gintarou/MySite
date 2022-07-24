@@ -15,3 +15,4 @@ React(Create React App) / TypeScriptを使って作成。
 - prettier
 - CRACO
 - framer-motion
+- react-intersection-observer
