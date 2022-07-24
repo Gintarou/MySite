@@ -11,24 +11,33 @@ import { SubSectionWrapper } from '../organisms/SubSectionWrapper';
 
 export const Activity: React.FC = () => (
   <SubSectionWrapper>
-    <Heading>アクティビティ</Heading>
+    <Heading>ツクッタモノ</Heading>
     <div css={wrapper}>
       <div css={boxWrapper}>
         <Link to="activity1" css={boxLink}>
           <img css={image} src={Thumb1} alt="ポートフォリオ" />
-          <p>オザワリクトのポートフォリオ</p>
+          <div css={textBox}>
+            <p>ポートフォリオサイト</p>
+            <p>React・TypeScript</p>
+          </div>
         </Link>
       </div>
       <div css={boxWrapper}>
         <Link to="activity1" css={boxLink}>
           <img css={image} src={Thumb1} alt="ポートフォリオ" />
-          <p>オザワリクトのポートフォリオ</p>
+          <div css={textBox}>
+            <p>
+              既存のWebサイトでジェスチャー操作が可能になるソフトウェアモジュール
+            </p>
+          </div>
         </Link>
       </div>
       <div css={boxWrapper}>
         <Link to="activity1" css={boxLink}>
           <img css={image} src={Thumb1} alt="ポートフォリオ" />
-          <p>オザワリクトのポートフォリオ</p>
+          <div css={textBox}>
+            <p>Webカメラで物流管理</p>
+          </div>
         </Link>
       </div>
     </div>
@@ -69,4 +78,11 @@ const image = css({
   width: '100%',
   height: '60%',
   objectFit: 'cover',
+});
+
+const textBox = css({
+  padding: '0.7em 1em',
+  p: {
+    lineHeight: '1.5em',
+  },
 });
