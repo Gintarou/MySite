@@ -23,9 +23,9 @@ const font = css({
     },
   },
   p: {
-    lineHeight: '1.6em',
-    letterSpacing: '0.1em',
-    margin: '14px 0',
+    lineHeight: '2.5em',
+    // letterSpacing: '0.1em',
+    // padding: '14px 0',
   },
 });
 
