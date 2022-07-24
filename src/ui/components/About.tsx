@@ -2,10 +2,10 @@ import React from 'react';
 
 import { Heading } from '@/ui/atoms/Heading';
 
-import { SectionWrapper } from '../organisms/SectionWrapper';
+import { SubSectionWrapper } from '../organisms/SubSectionWrapper';
 
 export const About: React.FC = () => (
-  <SectionWrapper>
+  <SubSectionWrapper>
     <Heading>オザワリクト</Heading>
     <p>はじめまして。大学院修士１年のおざわです。</p>
     <p>
@@ -14,5 +14,5 @@ export const About: React.FC = () => (
     <p>
       趣味はテニス、ダーツで、最近はAmazonのプライムデーでギターを買って音楽にも手を出し始めています。
     </p>
-  </SectionWrapper>
+  </SubSectionWrapper>
 );

@@ -3,48 +3,82 @@ import React from 'react';
 import { css } from '@emotion/react';
 import { Link } from 'react-router-dom';
 
+import Thumb1 from '@/assets/activity1thumb.png';
 import { routes } from '@/config/routes';
 import { Heading } from '@/ui/atoms/Heading';
-// import { theme } from '@/utils/theme';
+import { theme } from '@/utils/theme';
 
-import { SectionWrapper } from '../organisms/SectionWrapper';
+import { SubSectionWrapper } from '../organisms/SubSectionWrapper';
 
 export const Activity: React.FC = () => (
-  <SectionWrapper>
+  <SubSectionWrapper>
     <Heading>アクティビティ</Heading>
     <div css={wrapper}>
-      <div css={box}>
-        <Link to={routes.activity1} css={boxLink}>
-          <p>helo</p>
-        </Link>
+      <div css={boxWrapper}>
+        <div css={box}>
+          <Link to={routes.activity1} css={boxLink}>
+            <img css={image} src={Thumb1} alt="ポートフォリオ" />
+            <p>オザワリクトのポートフォリオ</p>
+          </Link>
+        </div>
       </div>
-      <div css={box} />
-      <div css={box} />
+      <div css={boxWrapper}>
+        <div css={box}>
+          <Link to={routes.activity1} css={boxLink}>
+            <img css={image} src={Thumb1} alt="ポートフォリオ" />
+            <p>オザワリクトのポートフォリオ</p>
+          </Link>
+        </div>
+      </div>
+      <div css={boxWrapper}>
+        <div css={box}>
+          <Link to={routes.activity1} css={boxLink}>
+            <img css={image} src={Thumb1} alt="ポートフォリオ" />
+            <p>オザワリクトのポートフォリオ</p>
+          </Link>
+        </div>
+      </div>
     </div>
-  </SectionWrapper>
+  </SubSectionWrapper>
 );
 
 const wrapper = css({
   display: 'flex',
   flexWrap: 'wrap',
   justifyContent: 'space-between',
-  height: '300px',
+  height: '270px',
+});
+
+const boxWrapper = css({
+  background: theme.colors.black,
+  cursor: 'pointer',
+  height: '90%',
+  position: 'relative',
+  width: 'calc((100% / 3) - 6px)',
 });
 
 const box = css({
   // TODO: themeで色指定
   background: '#efefe8',
-  cursor: 'pointer',
-  width: 'calc((100% / 3) - 4px)',
-  height: '90%',
+  height: '100%',
+  position: 'absolute',
   transition: '0.3s',
+  width: '100%',
   ':hover': {
-    transform: 'scale(1.02)',
+    transform: 'translate(-4px, -4px)',
   },
 });
 
 const boxLink = css({
+  color: theme.colors.black,
   display: 'block',
   height: '100%',
+  textDecoration: 'none',
   width: '100%',
+});
+
+const image = css({
+  width: '100%',
+  height: '60%',
+  objectFit: 'cover',
 });

@@ -2,10 +2,10 @@ import React from 'react';
 
 import { Heading } from '@/ui/atoms/Heading';
 
-import { SectionWrapper } from '../organisms/SectionWrapper';
+import { SubSectionWrapper } from '../organisms/SubSectionWrapper';
 
 export const Contact: React.FC = () => (
-  <SectionWrapper>
+  <SubSectionWrapper>
     <Heading>コンタクト</Heading>
-  </SectionWrapper>
+  </SubSectionWrapper>
 );

@@ -13,21 +13,13 @@ export const Main: React.FC = () => (
   <Wrapper>
     <Top />
     <div css={bg}>
-      <div css={wrapper}>
-        <About />
-        <Skills />
-        <Activity />
-      </div>
+      <About />
+      <Skills />
+      <Activity />
     </div>
   </Wrapper>
 );
 
 const bg = css({
   background: theme.colors.white,
-});
-
-const wrapper = css({
-  width: '90%',
-  margin: '0 auto',
-  maxWidth: '800px',
 });

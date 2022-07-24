@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { AnimatePresence } from 'framer-motion';
-import { Footer } from '@/ui/organisms/Footer';
 
 import { Main } from '@/ui/pages';
 import { Routes, Route } from 'react-router-dom';
