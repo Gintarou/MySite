@@ -7,13 +7,15 @@ import { About } from '@/ui/components/About';
 import { Activity } from '@/ui/components/Activity';
 import { Skills } from '@/ui/components/Skills';
 import { Top } from '@/ui/components/Top';
-import { Footer } from '@/ui/organisms/Footer';
 import { theme } from '@/utils/theme';
 
 export const Main: React.FC = () => (
   <motion.div
-    animate={{ opacity: 1 }}
+    // initial
     initial={{ opacity: 0 }}
+    // mounted
+    animate={{ opacity: 1 }}
+    // unmount
     exit={{ opacity: 0 }}
     transition={{ duration: 0.5 }}
   >
@@ -25,7 +27,6 @@ export const Main: React.FC = () => (
         <Activity />
       </div>
     </div>
-    <Footer />
   </motion.div>
 );
 
