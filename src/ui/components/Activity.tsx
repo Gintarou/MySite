@@ -49,15 +49,25 @@ const wrapper = css({
   display: 'flex',
   flexWrap: 'wrap',
   justifyContent: 'space-between',
-  height: '260px',
+  gap: '20px',
+  '@media (min-width: 850px)': {
+    gap: '0',
+  },
 });
 
 const boxWrapper = css({
   background: theme.colors.black,
   cursor: 'pointer',
-  height: '90%',
+  height: '260px',
   position: 'relative',
-  width: 'calc((100% / 3) - 6px)',
+  margin: '0 auto',
+  width: '70%',
+  '@media (min-width: 450px)': {
+    width: '45%',
+  },
+  '@media (min-width: 850px)': {
+    width: 'calc((100% / 3) - 6px)',
+  },
 });
 
 const boxLink = css({
