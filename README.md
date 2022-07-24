@@ -7,3 +7,11 @@ React(Create React App) / TypeScriptを使って作成。
 - CRACOでimportのalias改善
 - それっぽくeslint、prettier設定
 - yarnのみ。npmは使わない。
+
+**使用したライブラリなど**
+- Create React App
+- emotion
+- eslint
+- prettier
+- CRACO
+- framer-motion
