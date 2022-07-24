@@ -66,9 +66,12 @@ const textWrapper = css({
 });
 
 const infoTextWrapper = css({
-  width: '26%',
+  width: '100%',
   '*': {
     lineHeight: '1.5em',
+  },
+  '@media (min-width: 850px)': {
+    width: '26%',
   },
 });
 
@@ -77,7 +80,10 @@ const infoTextBlock = css({
 });
 
 const detailText = css({
-  width: '60%',
+  width: '100%',
+  '@media (min-width: 850px)': {
+    width: '60%',
+  },
 });
 
 const infoHeading = css({

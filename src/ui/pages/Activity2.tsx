@@ -37,10 +37,8 @@ export const Activity2: React.FC = () => (
 );
 
 const mainImage = css({
-  borderRadius: '10px',
-  boxShadow: '2px 3px 10px #999999',
-  maxHeight: '400px',
-  objectFit: 'cover',
+  height: 'auto',
+  objectFit: 'contain',
   width: '100%',
 });
 
@@ -52,9 +50,12 @@ const textWrapper = css({
 });
 
 const infoTextWrapper = css({
-  width: '26%',
+  width: '100%',
   '*': {
     lineHeight: '1.5em',
+  },
+  '@media (min-width: 850px)': {
+    width: '26%',
   },
 });
 
@@ -63,7 +64,10 @@ const infoTextBlock = css({
 });
 
 const detailText = css({
-  width: '60%',
+  width: '100%',
+  '@media (min-width: 850px)': {
+    width: '60%',
+  },
 });
 
 const infoHeading = css({
