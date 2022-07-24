@@ -37,7 +37,7 @@ export const Activity: React.FC = () => (
         <Link to="activity3" css={boxLink}>
           <img css={image} src={Thumb1} alt="ポートフォリオ" />
           <div css={textBox}>
-            <p>Webカメラで物流管理</p>
+            <p>Webカメラで物流管理を行うシステムのプロトタイプ作成</p>
           </div>
         </Link>
       </div>
@@ -49,7 +49,7 @@ const wrapper = css({
   display: 'flex',
   flexWrap: 'wrap',
   justifyContent: 'space-between',
-  height: '270px',
+  height: '260px',
 });
 
 const boxWrapper = css({

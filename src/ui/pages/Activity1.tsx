@@ -15,10 +15,10 @@ export const Activity1: React.FC = () => (
       <img css={mainImage} src={WindowImage} alt="ポートフォリオの画像" />
       <div css={textWrapper}>
         <div css={infoTextWrapper}>
-          <div css={infoTextBlock}>
+          {/* <div css={infoTextBlock}>
             <p css={infoHeading}>制作期間</p>
             <p css={infoText}>1.5日</p>
-          </div>
+          </div> */}
           <div css={infoTextBlock}>
             <p css={infoHeading}>使用言語</p>
             <p css={infoText}>React / TypeScript</p>

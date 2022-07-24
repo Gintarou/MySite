@@ -26,18 +26,6 @@ export const Activity2: React.FC = () => (
             <p css={infoHeading}>使用言語</p>
             <p css={infoText}>Python / JavaScript</p>
           </div>
-          <div css={infoTextBlock}>
-            <p css={infoHeading}>URL</p>
-            <p css={infoText}>
-              <a
-                href="https://www.oit.ac.jp/rd/labs/kobayashi-lab/~ozawa/"
-                target="_black"
-                rel="noopener"
-              >
-                https://www.oit.ac.jp/rd/labs/kobayashi-lab/~ozawa/
-              </a>
-            </p>
-          </div>
         </div>
         <div css={detailText}>
           <p>
