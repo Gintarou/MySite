@@ -4,6 +4,7 @@ import { css } from '@emotion/react';
 import { Link } from 'react-router-dom';
 
 import Thumb1 from '@/assets/activity1thumb.png';
+import Jesture from '@/assets/execution.png';
 import { Heading } from '@/ui/atoms/Heading';
 import { theme } from '@/utils/theme';
 
@@ -23,8 +24,8 @@ export const Activity: React.FC = () => (
         </Link>
       </div>
       <div css={boxWrapper}>
-        <Link to="activity1" css={boxLink}>
-          <img css={image} src={Thumb1} alt="ポートフォリオ" />
+        <Link to="activity2" css={boxLink}>
+          <img css={image} src={Jesture} alt="ポートフォリオ" />
           <div css={textBox}>
             <p>
               既存のWebサイトでジェスチャー操作が可能になるソフトウェアモジュール
@@ -33,7 +34,7 @@ export const Activity: React.FC = () => (
         </Link>
       </div>
       <div css={boxWrapper}>
-        <Link to="activity1" css={boxLink}>
+        <Link to="activity3" css={boxLink}>
           <img css={image} src={Thumb1} alt="ポートフォリオ" />
           <div css={textBox}>
             <p>Webカメラで物流管理</p>

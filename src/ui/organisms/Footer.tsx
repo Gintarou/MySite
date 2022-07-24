@@ -15,7 +15,8 @@ const footer = css({
   display: 'flex',
   fontSize: '12px',
   fontWeight: 'lighter',
-  justifyContent: 'center',
   height: '40px',
+  justifyContent: 'center',
+  marginTop: '150px',
   width: '100%',
 });

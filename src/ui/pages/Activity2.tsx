@@ -2,26 +2,29 @@ import React from 'react';
 
 import { css } from '@emotion/react';
 
-import WindowImage from '@/assets/activity1window.png';
+import MainImage from '@/assets/execution.png';
 import { Wrapper } from '@/ui/organisms/MotionWrapper';
 
 import { Heading } from '../atoms/Heading';
 import { SubSectionWrapper } from '../organisms/SubSectionWrapper';
 
-export const Activity1: React.FC = () => (
+export const Activity2: React.FC = () => (
   <Wrapper>
     <SubSectionWrapper>
-      <Heading>オザワリクトのポートフォリオ</Heading>
-      <img css={mainImage} src={WindowImage} alt="ポートフォリオの画像" />
+      <Heading>
+        既存のWebサイトでジェスチャー操作が可能になる
+        <br />
+        ソフトウェアモジュール
+      </Heading>
+      <img css={mainImage} src={MainImage} alt="ポートフォリオの画像" />
       <div css={textWrapper}>
         <div css={infoTextWrapper}>
           <div css={infoTextBlock}>
-            <p css={infoHeading}>制作期間</p>
-            <p css={infoText}>1.5日</p>
+            <p css={infoHeading}>学部での卒業研究として開発</p>
           </div>
           <div css={infoTextBlock}>
             <p css={infoHeading}>使用言語</p>
-            <p css={infoText}>React / TypeScript</p>
+            <p css={infoText}>Python / JavaScript</p>
           </div>
           <div css={infoTextBlock}>
             <p css={infoHeading}>URL</p>
@@ -37,15 +40,12 @@ export const Activity1: React.FC = () => (
           </div>
         </div>
         <div css={detailText}>
-          <p>僕自身のポートフォリオサイトの作成。</p>
           <p>
-            Create React
-            Appを使ってデザインを含め、フルスクラッチで作成しました。
+            近年蔓延している新型コロナウイルスの問題を受け、既存のWeb環境下で非接触操作ができる、ソフトウェアモジュールの開発を行いました。
           </p>
           <p>
-            BrowserRouter周りで不具合があるためにHashRouterを使っているせいで、URLにハッシュが含まれているのは内緒の話。
+            画像のように、Webカメラさえあればハンドジェスチャーで操作が可能になります。
           </p>
-          <p>現在もデザインを含め、色々と改修・追加中です。</p>
         </div>
       </div>
     </SubSectionWrapper>
@@ -53,8 +53,10 @@ export const Activity1: React.FC = () => (
 );
 
 const mainImage = css({
-  height: 'auto',
-  objectFit: 'contain',
+  borderRadius: '10px',
+  boxShadow: '2px 3px 10px #999999',
+  maxHeight: '400px',
+  objectFit: 'cover',
   width: '100%',
 });
 
