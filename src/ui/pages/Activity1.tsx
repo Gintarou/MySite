@@ -35,17 +35,25 @@ export const Activity1: React.FC = () => (
               </a>
             </p>
           </div>
+          <div css={infoTextBlock}>
+            <p css={infoHeading}>Git</p>
+            <p css={infoText}>
+              <a
+                href="https://github.com/Gintarou/MySite"
+                target="_black"
+                rel="noopener"
+              >
+                https://github.com/Gintarou/MySite
+              </a>
+            </p>
+          </div>
         </div>
         <div css={detailText}>
           <p>僕自身のポートフォリオサイトの作成。</p>
+          <p>Create React Appを使ってフルスクラッチで作成しました。</p>
           <p>
-            Create React
-            Appを使ってデザインを含め、フルスクラッチで作成しました。
+            画面遷移はframer-motionを使っていて、現在もデザインを含め、色々と改修・追加中です。
           </p>
-          <p>
-            BrowserRouter周りで不具合があるためにHashRouterを使っているせいで、URLにハッシュが含まれているのは内緒の話。
-          </p>
-          <p>現在もデザインを含め、色々と改修・追加中です。</p>
         </div>
       </div>
     </SubSectionWrapper>
