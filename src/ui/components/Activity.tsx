@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 import Thumb1 from '@/assets/activity1thumb.png';
 import Jesture from '@/assets/execution.png';
+import NoImage from '@/assets/noimage.gif';
 import { Heading } from '@/ui/atoms/Heading';
 import { theme } from '@/utils/theme';
 
@@ -35,7 +36,7 @@ export const Activity: React.FC = () => (
       </div>
       <div css={boxWrapper}>
         <Link to="activity3" css={boxLink}>
-          <img css={image} src={Thumb1} alt="ポートフォリオ" />
+          <img css={image} src={NoImage} alt="ポートフォリオ" />
           <div css={textBox}>
             <p>Webカメラで物流管理を行うシステムのプロトタイプ作成</p>
           </div>

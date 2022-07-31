@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import { css } from '@emotion/react';
 
-import WindowImage from '@/assets/activity1window.png';
+import NoImage from '@/assets/noimage.gif';
 import { Wrapper } from '@/ui/organisms/MotionWrapper';
 
 import { Heading } from '../atoms/Heading';
@@ -17,7 +17,7 @@ export const Activity3: React.FC = () => {
     <Wrapper>
       <SubSectionWrapper>
         <Heading>Webカメラで物流管理を行うシステムのプロトタイプ作成</Heading>
-        <img css={mainImage} src={WindowImage} alt="ポートフォリオの画像" />
+        <img css={mainImage} src={NoImage} alt="ポートフォリオの画像" />
         <div css={textWrapper}>
           <div css={infoTextWrapper}>
             <div css={infoTextBlock}>
@@ -53,7 +53,7 @@ export const Activity3: React.FC = () => {
 };
 
 const mainImage = css({
-  height: 'auto',
+  maxHeight: '300px',
   objectFit: 'contain',
   width: '100%',
 });
