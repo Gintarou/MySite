@@ -35,7 +35,7 @@ const wrapper = (progress: number) =>
     boxSizing: 'border-box',
     display: 'flex',
     justifyContent: 'center',
-    height: '100vh',
+    height: '60vh',
     overflow: 'hidden',
     position: 'sticky',
     top: '0',
